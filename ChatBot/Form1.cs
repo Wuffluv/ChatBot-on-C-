@@ -7,12 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-// Для работы с регулярными выражениями
-using System.Text.RegularExpressions;
-
-// Для HTTP-запросов
 using System.Net.Http;
+
+// Для рЕГУЛЯРЫХ ВЫРАЖЕНИЙ
+using System.Text.RegularExpressions;
 
 // Для парсинга JSON
 using Newtonsoft.Json;
@@ -46,6 +44,7 @@ namespace ChatBot
                     new Regex(@"\b(пока|до\s+свидания)\b", RegexOptions.IgnoreCase),
                     "До свидания! Хорошего дня!"
                 }
+                    //todo: Ознакомление
             };
         }
 
@@ -84,8 +83,7 @@ namespace ChatBot
 
             // Проверим, спрашивают ли про погоду
             // Ищем слово "погода" (в любом падеже) с форматом "погода в Городе"
-            // Пример: "погода в Москве", "какая погода в Казани", "подскажи погоду в Самаре" и т.п.
-            // Регулярное выражение содержит группу (.+), которая захватывает название города
+            // Регулярка которая плюсиком захватывет название города
             Regex weatherRegex = new Regex(@"погод[ауы] (?:в|во)\s+(.+)", RegexOptions.IgnoreCase);
 
             // Если строка соответствует шаблону "погода в ...", то возьмём город из группы
@@ -108,7 +106,6 @@ namespace ChatBot
             {
                 // Если просто написали "погода" без указания города
                 // Например, "какая погода?" или "погода" 
-                // Мы тоже можем дать ответ, но возьмём город по умолчанию (Москва)
                 Regex justWeatherRegex = new Regex(@"погод[ауы]", RegexOptions.IgnoreCase);
 
                 if (justWeatherRegex.IsMatch(userInput))
@@ -136,19 +133,15 @@ namespace ChatBot
             listBox1.TopIndex = listBox1.Items.Count - 1;
         }
 
-        /// <summary>
-        /// Асинхронный метод для получения погоды из OpenWeatherMap
-        /// </summary>
-        /// <param name="city">Название города (например, "Москва")</param>
-        /// <returns>Строка с описанием погоды</returns>
+        //Парсим погодные данные с OpenWeather
         private async Task<string> GetWeatherAsync(string city)
         {
             try
             {
-                // Ваш API-ключ (зарегистрируйтесь на https://openweathermap.org/):
+                // Мой API с OpenWeather
                 string apiKey = "2b1afb180216580514c3971824e7bf02";
 
-                // Формируем URL запроса (обратите внимание на https вместо http)
+                // Формируем URL запроса 
                 string url = $"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={apiKey}&units=metric&lang=ru";
 
                 using (HttpClient client = new HttpClient())
@@ -176,8 +169,7 @@ namespace ChatBot
                 }
             }
             catch (Exception ex)
-            {
-                // Если возникло какое-то исключение, выводим текст ошибки
+            {             
                 return "Ошибка при запросе погоды: " + ex.Message;
             }
         }
