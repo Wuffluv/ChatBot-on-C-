@@ -174,17 +174,17 @@ namespace ChatBot
                         // Парсим JSON-ответ в динамический объект
                         dynamic data = JsonConvert.DeserializeObject(json);
 
-                        // Извлекаем нужные данные из JSON-объекта:
-                        // - Температуру 
+                        // Извлекаем  из JSON-объекта:
+                        //Температуру 
                         double temp = data.main.temp;
 
-                        // - Описание погоды (description) 
+                        //  Описание погоды (description) 
                         string description = data.weather[0].description;
 
-                        // - Название города
+                        //Название города
                         string cityName = data.name;
 
-                        // Формируем и возвращаем строку с описанием текущей погоды
+                        //возвращаем строку с описанием  пргоды
                         return $"Сейчас в городе {cityName} {temp}°C, {description}";
                     }
                     else
