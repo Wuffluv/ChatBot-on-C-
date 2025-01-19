@@ -59,6 +59,7 @@
     <Compile Include="ChatBot.Designer.cs">
       <DependentUpon>ChatBot.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModuleBot.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ChatBot.resx">
