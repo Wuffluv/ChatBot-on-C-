@@ -2,7 +2,6 @@ C:\Users\wolfd\Desktop\Study\ООП\ChatBot\ChatBot\bin\Debug\ChatBot.exe.config
 C:\Users\wolfd\Desktop\Study\ООП\ChatBot\ChatBot\bin\Debug\ChatBot.exe
 C:\Users\wolfd\Desktop\Study\ООП\ChatBot\ChatBot\bin\Debug\ChatBot.pdb
 C:\Users\wolfd\Desktop\Study\ООП\ChatBot\ChatBot\obj\Debug\ChatBot.csproj.AssemblyReference.cache
-C:\Users\wolfd\Desktop\Study\ООП\ChatBot\ChatBot\obj\Debug\ChatBot.Form1.resources
 C:\Users\wolfd\Desktop\Study\ООП\ChatBot\ChatBot\obj\Debug\ChatBot.Properties.Resources.resources
 C:\Users\wolfd\Desktop\Study\ООП\ChatBot\ChatBot\obj\Debug\ChatBot.csproj.GenerateResource.cache
 C:\Users\wolfd\Desktop\Study\ООП\ChatBot\ChatBot\obj\Debug\ChatBot.csproj.CoreCompileInputs.cache
@@ -11,3 +10,4 @@ C:\Users\wolfd\Desktop\Study\ООП\ChatBot\ChatBot\obj\Debug\ChatBot.pdb
 C:\Users\wolfd\Desktop\Study\ООП\ChatBot\ChatBot\bin\Debug\Newtonsoft.Json.dll
 C:\Users\wolfd\Desktop\Study\ООП\ChatBot\ChatBot\bin\Debug\Newtonsoft.Json.xml
 C:\Users\wolfd\Desktop\Study\ООП\ChatBot\ChatBot\obj\Debug\ChatBot.csproj.Up2Date
+C:\Users\wolfd\Desktop\Study\ООП\ChatBot\ChatBot\obj\Debug\ChatBot.ChatBot.resources
