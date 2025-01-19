@@ -4,67 +4,20 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Net.Http;
 using Newtonsoft.Json;
-using System.Data;
 
 namespace ChatBot
 {
     public class ModuleBot
     {
         private Random random;
-        private int numberToGuess; // Для игры "Угадай число"
-        private bool isGuessingGameActive;
-        private List<(string Question, string Answer)> quizQuestions; // Вопросы викторины
-        private int currentQuizIndex;
 
         public ModuleBot()
         {
             random = new Random();
-            InitializeQuiz();
         }
 
         public async Task<string> GetResponseAsync(string userInput)
         {
-            // Если активна игра "Угадай число"
-            if (isGuessingGameActive)
-            {
-                if (int.TryParse(userInput, out int userGuess))
-                {
-                    if (userGuess == numberToGuess)
-                    {
-                        isGuessingGameActive = false;
-                        return "Поздравляю! Вы угадали число.";
-                    }
-                    else if (userGuess < numberToGuess)
-                    {
-                        return "Загаданное число больше.";
-                    }
-                    else
-                    {
-                        return "Загаданное число меньше.";
-                    }
-                }
-                return "Введите целое число.";
-            }
-
-            // Если активна викторина
-            if (currentQuizIndex >= 0)
-            {
-                if (string.Equals(userInput, quizQuestions[currentQuizIndex].Answer, StringComparison.OrdinalIgnoreCase))
-                {
-                    currentQuizIndex++;
-                    if (currentQuizIndex >= quizQuestions.Count)
-                    {
-                        currentQuizIndex = -1;
-                        return "Поздравляю! Вы ответили на все вопросы викторины!";
-                    }
-                    return $"Правильно! Следующий вопрос: {quizQuestions[currentQuizIndex].Question}";
-                }
-                else
-                {
-                    return "Неправильно. Попробуйте снова.";
-                }
-            }
-
             // Регулярные выражения для ответов
             var responses = GetRegexResponses();
             foreach (var pair in responses)
@@ -98,20 +51,23 @@ namespace ChatBot
                 { new Regex(@"\b(пока|до\s+свидания|увидимся|чао|бай-бай)\b", RegexOptions.IgnoreCase),
                     new List<string> { "До свидания! Хорошего дня!", "Пока! Ещё увидимся.", "Чао!", "Всего доброго!" } },
                 { new Regex(@"(что ты умеешь|расскажи о себе|твои возможности|возможности)", RegexOptions.IgnoreCase),
-                    new List<string> { "Я умею рассказывать погоду, общаться и радовать вас!", "Я бот и могу подсказать погоду или просто поговорить.", "Мои возможности пока скромны, но я стараюсь быть полезным." } },
+                    new List<string> {
+                        "Вот что я могу:\n" +
+                        "1. Подсказать погоду: 'погода в [город]'\n" +
+                        "2. Рассказать интересный факт: 'расскажи факт'\n" +
+                        "3. Сгенерировать случайный пароль: 'сгенерируй пароль'\n" +
+                        "4. Поздороваться: 'привет', 'здравствуй', 'хай'\n" +
+                        "5. Попрощаться: 'пока', 'до свидания'\n" +
+                        "6. Узнать, как у меня дела: 'как дела?'"
+                    } },
                 { new Regex(@"\b(спасибо|благодарю|спс|спасиб|пасиб)\b", RegexOptions.IgnoreCase),
                     new List<string> { "Всегда пожалуйста!", "Рад помочь!", "Обращайтесь!", "Не за что!" } },
                 { new Regex(@"\b(факт|расскажи факт)\b", RegexOptions.IgnoreCase),
                     new List<string> { GetRandomFact() } },
-                { new Regex(@"\b(пароль|сгенерируй пароль)\b", RegexOptions.IgnoreCase),
-                    new List<string> { $"Ваш случайный пароль: {GenerateRandomPassword()}" } },
-                { new Regex(@"\b(угадай число|начни угадай число)\b", RegexOptions.IgnoreCase),
-                    new List<string> { StartGuessingGame() } },
-                { new Regex(@"\b(начни викторину|викторина)\b", RegexOptions.IgnoreCase),
-                    new List<string> { StartQuiz() } }
-             };
+                { new Regex(@"\b(пароль|сгенерируй пароль|создай пароль)\b", RegexOptions.IgnoreCase),
+                    new List<string> { $"Ваш случайный пароль: {GenerateRandomPassword()}" } }
+            };
         }
-
 
         private async Task<string> GetWeatherAsync(string city)
         {
@@ -166,31 +122,6 @@ namespace ChatBot
                 password[i] = chars[random.Next(chars.Length)];
             }
             return new string(password);
-        }
-
-        private string StartGuessingGame()
-        {
-            numberToGuess = random.Next(1, 101);
-            isGuessingGameActive = true;
-            return "Я загадал число от 1 до 100. Попробуйте угадать!";
-        }
-
-        private string StartQuiz()
-        {
-            currentQuizIndex = 0;
-            return $"Начинаем викторину! Первый вопрос: {quizQuestions[currentQuizIndex].Question}";
-        }
-
-        private void InitializeQuiz()
-        {
-            quizQuestions = new List<(string Question, string Answer)>
-            {
-                ("Столица Франции?", "Париж"),
-                ("2 + 2?", "4"),
-                ("Какой цвет у неба?", "Синий"),
-                ("Сколько планет в Солнечной системе?", "8")
-            };
-            currentQuizIndex = -1;
         }
     }
 }
