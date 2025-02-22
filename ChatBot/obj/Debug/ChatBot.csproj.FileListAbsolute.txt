@@ -11,3 +11,4 @@ C:\Users\wolfd\Desktop\Study\ООП\ChatBot\ChatBot\bin\Debug\Newtonsoft.Json.dl
 C:\Users\wolfd\Desktop\Study\ООП\ChatBot\ChatBot\bin\Debug\Newtonsoft.Json.xml
 C:\Users\wolfd\Desktop\Study\ООП\ChatBot\ChatBot\obj\Debug\ChatBot.csproj.Up2Date
 C:\Users\wolfd\Desktop\Study\ООП\ChatBot\ChatBot\obj\Debug\ChatBot.ChatBot.resources
+C:\Users\wolfd\Desktop\Study\ООП\ChatBot\ChatBot\obj\Debug\ChatBot.Login.resources
