@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\wolfd\\Desktop\\Study\\\u041E\u041E\u041F\\ChatBot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{70B16771-B8B1-4387-8D03-2F2AE47A67EE}|UnitTestChatBot\\UnitTestChatBot.csproj|C:\\Users\\wolfd\\Desktop\\Study\\\u041E\u041E\u041F\\ChatBot\\unittestchatbot\\unittestchatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70B16771-B8B1-4387-8D03-2F2AE47A67EE}|UnitTestChatBot\\UnitTestChatBot.csproj|solutionrelative:unittestchatbot\\unittestchatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{037EF5F3-B1AA-4B1B-B856-9281698F2272}|ChatBot\\ChatBot.csproj|c:\\users\\wolfd\\desktop\\study\\\u043E\u043E\u043F\\chatbot\\chatbot\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037EF5F3-B1AA-4B1B-B856-9281698F2272}|ChatBot\\ChatBot.csproj|solutionrelative:chatbot\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{037EF5F3-B1AA-4B1B-B856-9281698F2272}|ChatBot\\ChatBot.csproj|c:\\users\\wolfd\\desktop\\study\\\u043E\u043E\u043F\\chatbot\\chatbot\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{037EF5F3-B1AA-4B1B-B856-9281698F2272}|ChatBot\\ChatBot.csproj|C:\\Users\\wolfd\\Desktop\\Study\\\u041E\u041E\u041F\\ChatBot\\chatbot\\modulebot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{037EF5F3-B1AA-4B1B-B856-9281698F2272}|ChatBot\\ChatBot.csproj|solutionrelative:chatbot\\modulebot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{037EF5F3-B1AA-4B1B-B856-9281698F2272}|ChatBot\\ChatBot.csproj|C:\\Users\\wolfd\\Desktop\\Study\\\u041E\u041E\u041F\\ChatBot\\chatbot\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{037EF5F3-B1AA-4B1B-B856-9281698F2272}|ChatBot\\ChatBot.csproj|solutionrelative:chatbot\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,16 +19,12 @@
       "RelativeMoniker": "D:0:0:{037EF5F3-B1AA-4B1B-B856-9281698F2272}|ChatBot\\ChatBot.csproj|solutionrelative:chatbot\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{70B16771-B8B1-4387-8D03-2F2AE47A67EE}|UnitTestChatBot\\UnitTestChatBot.csproj|C:\\Users\\wolfd\\Desktop\\Study\\\u041E\u041E\u041F\\ChatBot\\unittestchatbot\\unittestchatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70B16771-B8B1-4387-8D03-2F2AE47A67EE}|UnitTestChatBot\\UnitTestChatBot.csproj|solutionrelative:unittestchatbot\\unittestchatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{037EF5F3-B1AA-4B1B-B856-9281698F2272}|ChatBot\\ChatBot.csproj|C:\\Users\\wolfd\\Desktop\\Study\\\u041E\u041E\u041F\\ChatBot\\chatbot\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{037EF5F3-B1AA-4B1B-B856-9281698F2272}|ChatBot\\ChatBot.csproj|solutionrelative:chatbot\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{037EF5F3-B1AA-4B1B-B856-9281698F2272}|ChatBot\\ChatBot.csproj|C:\\Users\\wolfd\\Desktop\\Study\\\u041E\u041E\u041F\\ChatBot\\chatbot\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{037EF5F3-B1AA-4B1B-B856-9281698F2272}|ChatBot\\ChatBot.csproj|solutionrelative:chatbot\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{037EF5F3-B1AA-4B1B-B856-9281698F2272}|ChatBot\\ChatBot.csproj|C:\\Users\\wolfd\\Desktop\\Study\\\u041E\u041E\u041F\\ChatBot\\chatbot\\modulebot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{037EF5F3-B1AA-4B1B-B856-9281698F2272}|ChatBot\\ChatBot.csproj|solutionrelative:chatbot\\modulebot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,63 +34,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "UnitTestChatBot.cs",
               "DocumentMoniker": "C:\\Users\\wolfd\\Desktop\\Study\\\u041E\u041E\u041F\\ChatBot\\UnitTestChatBot\\UnitTestChatBot.cs",
               "RelativeDocumentMoniker": "UnitTestChatBot\\UnitTestChatBot.cs",
               "ToolTip": "C:\\Users\\wolfd\\Desktop\\Study\\\u041E\u041E\u041F\\ChatBot\\UnitTestChatBot\\UnitTestChatBot.cs",
               "RelativeToolTip": "UnitTestChatBot\\UnitTestChatBot.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAkwAEAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwAEAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T13:29:41.401Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\wolfd\\Desktop\\Study\\\u041E\u041E\u041F\\ChatBot\\ChatBot\\Login.cs",
               "RelativeDocumentMoniker": "ChatBot\\Login.cs",
               "ToolTip": "C:\\Users\\wolfd\\Desktop\\Study\\\u041E\u041E\u041F\\ChatBot\\ChatBot\\Login.cs",
               "RelativeToolTip": "ChatBot\\Login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T12:51:54.975Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "ModuleBot.cs",
               "DocumentMoniker": "C:\\Users\\wolfd\\Desktop\\Study\\\u041E\u041E\u041F\\ChatBot\\ChatBot\\ModuleBot.cs",
               "RelativeDocumentMoniker": "ChatBot\\ModuleBot.cs",
               "ToolTip": "C:\\Users\\wolfd\\Desktop\\Study\\\u041E\u041E\u041F\\ChatBot\\ChatBot\\ModuleBot.cs",
               "RelativeToolTip": "ChatBot\\ModuleBot.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAuwJEAAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-19T11:46:07.96Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "ChatBot.cs",
               "DocumentMoniker": "C:\\Users\\wolfd\\Desktop\\Study\\\u041E\u041E\u041F\\ChatBot\\ChatBot\\ChatBot.cs",
               "RelativeDocumentMoniker": "ChatBot\\ChatBot.cs",
               "ToolTip": "C:\\Users\\wolfd\\Desktop\\Study\\\u041E\u041E\u041F\\ChatBot\\ChatBot\\ChatBot.cs",
               "RelativeToolTip": "ChatBot\\ChatBot.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-08T03:39:56.14Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ChatBot.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\wolfd\\Desktop\\Study\\\u041E\u041E\u041F\\ChatBot\\ChatBot\\ChatBot.cs",
               "RelativeDocumentMoniker": "ChatBot\\ChatBot.cs",
@@ -102,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Login.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\wolfd\\Desktop\\Study\\\u041E\u041E\u041F\\ChatBot\\ChatBot\\Login.cs",
               "RelativeDocumentMoniker": "ChatBot\\Login.cs",

@@ -5,6 +5,9 @@ using System.Threading.Tasks;
 using System.Net.Http;
 using Newtonsoft.Json;
 
+
+///Модель
+
 // Пространство имен для модуля логики чат-бота
 namespace ChatBot
 {
@@ -109,6 +112,7 @@ namespace ChatBot
                 //Символ @ перед строкой (например, @"...") создаёт дословную строку (verbatim string).
                 //RegexOptions.IgnoreCase (игнорирует регистр)
                 //\b — граница слова (чтобы исключить совпадения внутри слов).
+                //Граница слова \b – проверка, как ^ и $.
                 { new Regex(@"\b(привет|здравствуй|хай|хелло)\b", RegexOptions.IgnoreCase),
                     new List<string> { "Привет, {user}! Чем могу помочь?", "Здравствуй, {user}!", "Хай, {user}! Как дела?" } },
                 // Регулярное выражение для вопроса "Как дела?"

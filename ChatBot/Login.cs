@@ -1,6 +1,11 @@
 ﻿using System;
 using System.Windows.Forms;
 
+
+//Представлние
+//Контроллер
+
+
 // Пространство имен для формы входа в приложение
 namespace ChatBot
 {
